@@ -34,5 +34,17 @@ final appRouter = GoRouter(
       redirect: ( _ , __ ) => '/home/0',
     ),
 
+    GoRoute(
+      path: '/settings',
+      name: SettingsScreen.name,
+      builder: (context, state) => const SettingsScreen(),
+    ),
+
+    GoRoute(
+      path: '/about',
+      name: AboutScreen.name,
+      builder: (context, state) => const AboutScreen(),
+    ),
+
   ]
 );
